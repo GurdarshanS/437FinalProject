@@ -6,4 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t majic .
-docker image tag majic 151214/8dfoodh:latest
+docker image push 151214/8dfoodh/majic:latest
