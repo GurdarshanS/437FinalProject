@@ -3,7 +3,6 @@ from calculator import Calculator
 
 
 class TestMethods(unittest.TestCase):
-    
     def test_addition(self):
         c = Calculator()
         self.assertEqual(c.addition(2, 4), 6)
