@@ -7,6 +7,7 @@ script:
   
   # Static analysis
   - flake8 --statistics --count
-  
+
 after_success:
-  - sh .travis/deploy_dockerhub.sh  
+  - sh .travis/deploy_dockerhub.sh
+  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh  
