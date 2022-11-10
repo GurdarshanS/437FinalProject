@@ -1,3 +1,3 @@
 language: python
 script:
-  - python -m pytest -v
+  - py -3 -m unittest calcapp.tests.calcTests
