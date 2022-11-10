@@ -3,4 +3,4 @@ script:
   - python -m unittest tests.calcTests
   
   # Static analysis
- - flake8 --statistics --count
+  - flake8 --statistics --count
