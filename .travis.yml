@@ -1,6 +1,12 @@
+sudo: required
+services:
+  - docker
 language: python
 script:
   - python -m unittest tests.calcTests
   
   # Static analysis
   - flake8 --statistics --count
+  
+after_success:
+  - sh .travis/deploy_dockerhub.sh  
