@@ -1,5 +1,5 @@
 import unittest
-from calcapp.calculator import Calculator as c
+from calculator import Calculator as c
 
 class TestMethods(unittest.TestCase):
     def test_addition(self):
@@ -13,6 +13,6 @@ class TestMethods(unittest.TestCase):
         
     def test_division(self):
         self.assertEqual(c.division(2,4), 0.5)
-        # a
+
 if __name__ == '__main__':
     unittest.main()
