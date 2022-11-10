@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t s .
-docker push 151214/s
+docker build -f Dockerfile -t majic .
+docker image tag majic 151214/8dfoodh:latest
