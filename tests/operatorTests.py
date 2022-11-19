@@ -3,6 +3,8 @@ from add import Addition
 from sub import Subtraction
 from mul import Multiplication
 from div import Division
+from mod import Modulo
+from pow import Power
 
 
 # Unit Tests
@@ -22,6 +24,14 @@ class TestMethods(unittest.TestCase):
     def test_division(self):
         d = Division()
         self.assertEqual(d.division(4, 2), 2)
+
+    def test_modulo(self):
+        m = Modulo()
+        self.assertEqual(m.modulo(6, 2), 0)
+
+    def test_power(self):
+        p = Power()
+        self.assertEqual(p.power(2, 2), 4)
 
 
 if __name__ == '__main__':
