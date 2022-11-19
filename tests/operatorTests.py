@@ -24,7 +24,7 @@ class TestMethods(unittest.TestCase):
     def test_division(self):
         d = Division()
         self.assertEqual(d.division(4, 2), 2)
- 
+
     def test_modulo(self):
         m = Modulo()
         self.assertEqual(m.modulo(6, 2), 3)

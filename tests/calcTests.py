@@ -23,7 +23,7 @@ class TestMethods(unittest.TestCase):
         c = Calculator()
         self.assertEqual(c.division(2, 4), 0.5)
         self.assertEqual(c.multiplication(c.division(2, 4), 3), 1.5)
-   
+
     def test_modulo(self):
         c = Calculator()
         self.assertEqual(c.modulo(6, 2), 3)
