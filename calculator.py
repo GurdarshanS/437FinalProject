@@ -2,6 +2,8 @@ from add import Addition
 from sub import Subtraction
 from mul import Multiplication
 from div import Division
+from mod import Modulo
+from pow import Power
 
 
 class Calculator:
@@ -21,3 +23,11 @@ class Calculator:
     def division(self, n1, n2):
         div = Division()
         return div.division(n1, n2)
+
+    def modulo(self, n1, n2):
+        mod = Modulo()
+        return mod.modulo(n1, n2)
+
+    def power(self, n1, n2):
+        pow = Power()
+        return pow.power(n1, n2)

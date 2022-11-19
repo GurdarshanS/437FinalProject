@@ -23,6 +23,16 @@ class TestMethods(unittest.TestCase):
         c = Calculator()
         self.assertEqual(c.division(2, 4), 0.5)
         self.assertEqual(c.multiplication(c.division(2, 4), 3), 1.5)
+   
+    def test_modulo(self):
+        c = Calculator()
+        self.assertEqual(c.modulo(6, 2), 3)
+        self.assertEqual(c.addition(c.modulo(6, 2), 1), 4)
+
+    def test_power(self):
+        c = Calculator()
+        self.assertEqual(c.power(2, 2), 4)
+        self.assertEqual(c.subtraction(c.power(2, 2), 1), 3)
 
 
 if __name__ == '__main__':

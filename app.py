@@ -24,6 +24,10 @@ def calculate():
         result = c.multiplication(v1, v2)
     elif (operation == 'Divide'):
         result = c.division(v1, v2)
+    elif (operation == 'Modulo'):
+        result = c.modulo(v1, v2)
+    elif (operation == 'Power'):
+        result = c.power(v1, v2)
     else:
         result = 0
     return render_template('webcalc.html', computation=result)
