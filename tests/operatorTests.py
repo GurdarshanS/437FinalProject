@@ -27,7 +27,7 @@ class TestMethods(unittest.TestCase):
 
     def test_modulo(self):
         m = Modulo()
-        self.assertEqual(m.modulo(6, 2), 3)
+        self.assertEqual(m.modulo(6, 2), 0)
 
     def test_power(self):
         p = Power()
