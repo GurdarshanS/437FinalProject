@@ -3,6 +3,7 @@ services:
   - docker
 language: python
 script:
+  - python -m unittest tests.operatorTests
   - python -m unittest tests.calcTests
   
   # Static analysis
